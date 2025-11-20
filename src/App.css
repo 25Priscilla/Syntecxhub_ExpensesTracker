@@ -1,0 +1,81 @@
+body {
+  background: #f2f2f2;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px #ddd;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.input-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.input-box button {
+  padding: 10px 22px;
+  border: none;
+  background: #4b7bec;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.input-box button:hover {
+  background: #3867d6;
+}
+
+h2 {
+  margin: 20px 0;
+  color: #333;
+}
+
+.expense-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.expense-list li {
+  display: flex;
+  justify-content: space-between;
+  background: #fafafa;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  margin-bottom: 10px;
+}
+
+.delete {
+  background: #eb3b5a;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete:hover {
+  background: #d91e40;
+}
