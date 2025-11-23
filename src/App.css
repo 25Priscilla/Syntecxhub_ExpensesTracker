@@ -1,81 +1,127 @@
 body {
-  background: #f2f2f2;
-  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
 }
 
 .container {
-  max-width: 600px;
-  margin: 50px auto;
-  background: white;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 0 12px #ddd;
+  max-width: 650px;
+  margin: 40px auto;
+  background: #ffffffd5;
+  padding: 30px;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 15px #00000022;
   text-align: center;
 }
 
 h1 {
+  font-size: 28px;
   margin-bottom: 20px;
+}
+
+.total-card {
+  background: #4b7bec;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.total-card p {
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .input-box {
   display: flex;
   gap: 10px;
-  margin-bottom: 20px;
   flex-wrap: wrap;
+  margin-bottom: 25px;
 }
 
-.input-box input {
+.input-box input,
+.input-box select {
   flex: 1;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
 
-.input-box button {
-  padding: 10px 22px;
-  border: none;
-  background: #4b7bec;
+.add-btn {
+  padding: 12px 18px;
+  background: #20bf6b;
   color: white;
-  border-radius: 6px;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
+  font-weight: bold;
 }
 
-.input-box button:hover {
-  background: #3867d6;
-}
-
-h2 {
-  margin: 20px 0;
-  color: #333;
+.add-btn:hover {
+  background: #0fbf5e;
 }
 
 .expense-list {
   list-style: none;
   padding: 0;
-  margin-top: 20px;
 }
 
-.expense-list li {
+.expense-card {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   background: #fafafa;
-  padding: 12px;
-  border-radius: 6px;
-  border: 1px solid #eee;
-  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00000015;
+  margin-bottom: 15px;
 }
 
-.delete {
-  background: #eb3b5a;
-  color: white;
+.amount {
+  font-size: 18px;
+  color: #333;
+}
+
+.delete-btn {
+  background: #ff4757;
   border: none;
-  padding: 6px 12px;
-  border-radius: 5px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  color: white;
   cursor: pointer;
 }
 
-.delete:hover {
-  background: #d91e40;
+.delete-btn:hover {
+  background: #e84141;
+}
+
+/* CATEGORY TAG COLORS */
+
+.tag {
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+}
+
+.tag.food {
+  background: #ff9f43;
+}
+
+.tag.travel {
+  background: #1e90ff;
+}
+
+.tag.bills {
+  background: #ee5253;
+}
+
+.tag.shopping {
+  background: #9b59b6;
+}
+
+.tag.other {
+  background: #95a5a6;
 }
